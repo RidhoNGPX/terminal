@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y \
     python \
  && mkdir -p /home/stuff
 
-RUN apt-get install xbase-clients
-RUN apt-get install xfce4 xfce4-terminal
+RUN apt-get install xbase-clients -y
+RUN apt-get install xfce4 xfce4-terminal -y
 RUN wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 RUN dpkg -i chrome*
 RUN apt-get install -f
