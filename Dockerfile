@@ -19,6 +19,12 @@ RUN apt-get update && apt-get install -y \
     python \
  && mkdir -p /home/stuff
 
+RUN apt-get install xbase-clients
+RUN apt-get install xfce4 xfce4-terminal
+RUN wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+RUN dpkg -i chrome*
+RUN apt-get install -f
+RUN DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWj5o-RjPyf_6l-eTPvWjEu9QMAUc5faOXjG9LK1Y_X5DYDSH_oSnjoLRpxO3AOcLw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
 # Set work dir:
 WORKDIR /home
 
