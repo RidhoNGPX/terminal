@@ -1,4 +1,4 @@
-FROM ubuntu-20.04
+FROM phusion/baseimage:bionic-1.0.0
 
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
