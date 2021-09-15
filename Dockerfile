@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     ffmpeg \
+    lz4 \
     unzip \
     python \
  && mkdir -p /home/stuff
