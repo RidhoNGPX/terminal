@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     unzip \
     python \
+    python3 \
  && mkdir -p /home/stuff
 # Set work dir:
 WORKDIR /home
