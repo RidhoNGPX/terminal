@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     python \
     python3 \
+    asciinema \
  && mkdir -p /home/stuff
 # Set work dir:
 WORKDIR /home
