@@ -16,8 +16,9 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     ffmpeg \
+    neofetch\
     unzip \
-    python \
+    python-pip \
     python3 \
     asciinema \
  && mkdir -p /home/stuff
